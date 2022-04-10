@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <main class="box">
+      <section class="box__img">
+        <div class="img-container">
+          <img
+            src="images/illustration-woman-online-mobile.svg"
+            class="mob"
+            alt="illustration-woman-online-mobile"
+          /><img
+            src="images/illustration-woman-online-desktop.svg"
+            class="desktop"
+            alt="illustration-woman-online-desktop"
+          />
+        </div>
+      </section>
+      <section class="box__content">
+        <h1 class="content__title">faq</h1>
+        <div class="content" id="content-1" role="button" aria-pressed="true" onclick="visible('content-1')">
+          <div class="content__q">How many team members can I invite?</div>
+          <div class="content__arrow">
+            <img src="images/icon-arrow-down.svg" alt="arrow" />
+          </div>
+          <span class="answer">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.</span
+          >
+        </div>
+        <div class="content" id="content-2" role="button" aria-pressed="true" onclick="visible('content-2')">
+          <div class="content__q">What is the maximum file upload size?</div>
+          <div class="content__arrow">
+            <img src="images/icon-arrow-down.svg" alt="arrow" />
+          </div>
+          <span class="answer">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.</span
+          >
+        </div>
+        <div class="content" id="content-3" role="button" aria-pressed="true" onclick="visible('content-3')">
+          <div class="content__q">How do I reset my password?</div>
+          <div class="content__arrow">
+            <img src="images/icon-arrow-down.svg" alt="arrow" />
+          </div>
+          <span class="answer"
+            >Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.</span
+          >
+        </div>
+        <div class="content" id="content-4" role="button" aria-pressed="true" onclick="visible('content-4')">
+          <div class="content__q">Can I cancel my subscription?</div>
+          <div class="content__arrow">
+            <img src="images/icon-arrow-down.svg" alt="arrow" />
+          </div>
+          <span class="answer"
+            >Yes! Send us a message and we’ll process your request no questions
+            asked.</span
+          >
+        </div>
+        <div class="content" id="content-5" role="button" aria-pressed="true" onclick="visible('content-5')">
+          <div class="content__q">Do you provide additional support?</div>
+          <div class="content__arrow">
+            <img src="images/icon-arrow-down.svg" alt="arrow" />
+          </div>
+          <span class="answer">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.</span
+          >
+        </div>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/AbdallaRahmah">Ben Rahmah</a>.
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
